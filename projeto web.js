@@ -10,8 +10,69 @@ let contdots=0;
 
 let radios = document.querySelectorAll('input[type="radio"]') 
 console.log(radios)
-    
+
+radios.forEach(e =>){
+
+if (e.checked){
+    if(e.value == "Banshee"){ 
+        contSquirtle++; 
+} else if(e.value == "Demon"){ 
+        contBulbasaur++; 
+} else if(e.value == "Deogen"){ 
+        contCharmander++; 
+} else if(e.value == 'Goryo'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Hantu'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Jinn'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Mare'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Moroi'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Myling'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Obake'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Oni'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Onryo'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Phantom'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Poltergeist'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Raiju'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Revenant'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Shade'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Spirit'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Thaye'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Mimic'){ 
+    contPidgeotto++; 
+} else if(e.value == 'The_Twins'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Wraith'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Yokai'){ 
+    contPidgeotto++; 
+} else if(e.value == 'Yurei'){ 
+    contPidgeotto++; 
+
+
+
+            } 
+        } 
+    }
 }
+    
+
+    
+
 
 function name(params) {
 
