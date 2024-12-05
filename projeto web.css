@@ -38,7 +38,7 @@ border-radius: 50px;
 border:solid;
 border-color: black;
 
-background-color: rgba(122, 106, 133, 0.847);
+background-color: rgba(0, 0, 0, 0.847);
 width: 700px;
 
 padding: 50px;
@@ -52,6 +52,13 @@ padding: 50px;
     text-align: center;
 }
 
+button{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.708);
+    border-radius: 25px;
+    border: solid;
+    padding: 13px;
+}
 
 
 

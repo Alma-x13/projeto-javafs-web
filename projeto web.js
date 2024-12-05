@@ -72,7 +72,7 @@ if(contnaruto > maior){
 }
 
 setTimeout(() => { 
-    window.open(pagina+'.html') 
+    window.open(pagina+'naruto.html') 
 }, 5000);
 
 
