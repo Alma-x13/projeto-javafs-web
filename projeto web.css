@@ -13,6 +13,7 @@ body{
         font-weight: 400;
         font-style: normal;
       
+        
    
 }
 
@@ -21,8 +22,8 @@ body{
 
 
 #pai{
-
-font-size: 20px;
+    
+font-size: 21px;
 
 display: flex;
 align-items: center;
@@ -31,11 +32,7 @@ color: rgb(255, 255, 255);
 
 }
 
-
-
 #filho{
-
-
 
 
 border-radius: 50px;
@@ -47,9 +44,54 @@ width: 700px;
 
 padding: 50px;
 
-
    
 }
+
+
+
+
+/* espaço da pergutas*/
+
+
+#per1{
+padding-top: 20px;
+padding-bottom: 50px;
+}
+#per2{
+    padding-bottom: 50px;
+}
+#per3{
+    padding-bottom: 50px;
+}
+#per4{
+    padding-bottom: 50px;
+}
+#per5{
+    padding-bottom: 50px;
+}
+#per6{
+    padding-bottom: 50px;
+}
+#per7{
+    padding-bottom: 50px;
+}
+#per8{
+    padding-bottom: 50px;
+}
+#per9{
+    padding-bottom: 50px;
+}
+#per10{
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
 
 
 #botao1{
