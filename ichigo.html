@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   
+    
+    <title>Ichigo</title>
+    <link rel="stylesheet" href="projeto web.css"> 
+</head>
+<body>
+    
+
+
+
+
+<div id="paiichigo">
+
+
+<div>  
+    <h1>Seu resultado é: Luffy</h1> 
+    <h1 id="votos"></h1> 
+    <img src="img/ichigo.gif" alt="" class="personagem"> 
+</div>  
+
+</div>
+
+    <script> 
+
+
+    let contnaruto = localStorage.getItem('ichigo') 
+    document.querySelector('#votos').innerHTML = 'Votos:' + contnaruto 
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -110,7 +110,7 @@ height: 420px;
     border:solid;
     border-color: rgb(0, 0, 0);
     
-    background-color: rgba(232, 132, 25, 0.917);
+    background-color: rgba(234, 202, 19, 0.917);
     width: 700px;
     
     padding: 50px;
@@ -122,6 +122,161 @@ height: 420px;
     }
 
 
+/*parte do Luffy*/
+
+
+#pailuffy{
+
+    margin-top: 150px;
+    
+    color:rgb(255, 255, 255);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50px;
+    border:solid;
+    border-color: rgb(0, 0, 0);
+    
+    background-color: rgba(222, 45, 21, 0.917);
+    width: 700px;
+    
+    padding: 50px;
+    
+    text-align: center;
+
+    height: 420px;
+    
+    }
+
+
+
+
+
+/*parte do Ichigo*/
+
+
+#paiichigo{
+
+    margin-top: 150px;
+    
+    color:rgb(255, 255, 255);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50px;
+    border:solid;
+    border-color: rgb(0, 0, 0);
+    
+    background-color: rgba(0, 0, 0, 0.861);
+    width: 700px;
+    
+    padding: 50px;
+    
+    text-align: center;
+
+    height: 420px;
+    
+    }
+
+    
+
+/*parte do Yugi*/
+
+
+#paiYugi{
+
+    margin-top: 150px;
+    
+    color:rgb(255, 255, 255);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50px;
+    border:solid;
+    border-color: rgb(0, 0, 0);
+    
+    background-color: rgba(13, 13, 221, 0.861);
+    width: 700px;
+    
+    padding: 50px;
+    
+    text-align: center;
+
+    height: 420px;
+    
+    }
+
+
+    
+
+
+/*parte do Ash*/
+
+
+#paiAsh{
+
+    margin-top: 150px;
+    
+    color:rgb(255, 255, 255);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50px;
+    border:solid;
+    border-color: rgb(0, 0, 0);
+    
+
+    background-image: linear-gradient( to bottom, rgb(225, 26, 26),rgb(234, 71, 71), rgb(255, 255, 255), rgb(255, 255, 255));
+
+    width: 700px;
+    
+    padding: 50px;
+    
+    text-align: center;
+
+    height: 420px;
+    
+    }
+
+    
+
+/*parte do Ainz*/
+
+
+#paiAinz{
+
+    margin-top: 150px;
+    
+    color:rgb(255, 255, 255);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50px;
+    border:solid;
+    border-color: rgb(0, 0, 0);
+    
+
+    background-image: linear-gradient( to bottom, rgb(120, 36, 151),rgb(0, 0, 0));
+
+    width: 700px;
+    
+    padding: 50px;
+    
+    text-align: center;
+
+    height: 420px;
+    
+    }
 
 
 
