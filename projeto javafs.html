@@ -158,28 +158,41 @@ function testar() {
             ];
 
             perguntas.forEach(pergunta => {
+                // Buscando todas as respostas selecionadas para a pergunta atual
                 let radios = document.querySelectorAll(`input[name="${pergunta}"]:checked`);
                 radios.forEach(e => {
+                    // Verifica qual personagem foi selecionado
                     if (e.checked) {
-                        if (e.value == "naruto") {
-                            contnaruto++;
-                        } if (e.value == "goku") {
-                            contgoku++;
-                        } if (e.value == "luffy") {
-                            contluffy++;
-                        } if (e.value == "ichigo") {
-                            contichigo++;
-                        } if (e.value == "yugi") {
-                            contyugi++;
-                        } if (e.value == "ash") {
-                            contash++;
-                        } if (e.value == "Ainz_Ooal_Gow") {
-                            contAinz_Ooal_Gow++;
+                        switch (e.value) {
+                            case "naruto":
+                                contnaruto++;
+                                break;
+                            case "goku":
+                                contgoku++;
+                                break;
+                            case "luffy":
+                                contluffy++;
+                                break;
+                            case "ichigo":
+                                contichigo++;
+                                break;
+                            case "yugi":
+                                contyugi++;
+                                break;
+                            case "ash":
+                                contash++;
+                                break;
+                            case "Ainz_Ooal_Gow":
+                                contAinz_Ooal_Gow++;
+                                break;
+                            default:
+                                break;
                         }
                     }
                 });
             });
 
+            // Mostrando os resultados
             let resultado = `Naruto = ${contnaruto}<br> 
                              Goku = ${contgoku}<br> 
                              Luffy = ${contluffy}<br> 
@@ -203,6 +216,7 @@ function testar() {
             let maior = 0;
             let pagina = '';
 
+            // Verificando qual personagem tem o maior número de votos
             if (contnaruto > maior) {
                 maior = contnaruto;
                 pagina = 'naruto';
@@ -225,16 +239,17 @@ function testar() {
             }
             if (contash > maior) {
                 maior = contash;
-                pagina = 'ash';
+                pagina = 'ash';contAinz_Ooal_Gow
             }
             if (contAinz_Ooal_Gow > maior) {
                 maior = contAinz_Ooal_Gow;
-                pagina = 'Ainz';
+                pagina = 'Ainz_Ooal_Gow';
             }
 
-setTimeout(() => { 
-window.location.href = pagina + '.html';
-    }, 5000);
+            // Redireciona para a página do personagem vencedor
+            setTimeout(() => { 
+                window.location.href = pagina + '.html'; // Redireciona para a página do personagem vencedor
+            }, 5000);
         }
 </script>
 
