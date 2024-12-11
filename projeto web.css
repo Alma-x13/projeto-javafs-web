@@ -28,7 +28,18 @@ font-size: 21px;
 display: flex;
 align-items: center;
 justify-content: center;
-color: rgb(255, 255, 255);
+color: rgb(231, 125, 25);
+
+}
+
+
+#titulo{
+    font-size: 50px;
+
+font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 
 }
 
@@ -100,10 +111,11 @@ padding-bottom: 50px;
 
 button{
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.708);
+    background-color: rgb(255, 255, 253);
     border-radius: 25px;
     border: solid;
     padding: 13px;
+    color: rgba(241, 142, 13, 0.898);
 }
 
 
@@ -181,7 +193,8 @@ height: 420px;
     border:solid;
     border-color: rgb(0, 0, 0);
     
-    background-color: rgba(222, 45, 21, 0.917);
+    background-image: linear-gradient( to bottom,  rgba(222, 45, 21, 0.917), rgba(222, 45, 21, 0.917),rgba(0, 0, 0, 0.938),rgba(0, 0, 0, 0.894));
+
     width: 700px;
     
     padding: 50px;
@@ -243,9 +256,12 @@ height: 420px;
     border:solid;
     border-color: rgb(0, 0, 0);
     
-    background-color: rgba(13, 13, 221, 0.861);
+
+    background-image: linear-gradient( to bottom,  rgb(214, 212, 71), rgb(198, 196, 55),rgb(13, 13, 221),rgb(13, 13, 221));
+
     width: 700px;
     
+
     padding: 50px;
     
     text-align: center;
