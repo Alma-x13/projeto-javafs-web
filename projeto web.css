@@ -365,6 +365,10 @@ height: 420px;
     background-image: linear-gradient( to bottom, rgb(126, 126, 126),rgb(173, 173, 173));
 
     padding: 90px;
+
+    text-align: center;
+
+    margin-top: 100px;
     
 }
 

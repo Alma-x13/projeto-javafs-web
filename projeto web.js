@@ -63,6 +63,8 @@ function testar() {
     localStorage.setItem('Naruto', contnaruto);
     localStorage.setItem('Goku', contgoku);
     localStorage.setItem('Luffy', contluffy);
+
+
     localStorage.setItem('Ichigo', contichigo);
     localStorage.setItem('Yugi', contyugi);
     localStorage.setItem('Ash', contash);
@@ -100,6 +102,12 @@ function testar() {
         maior = contAinz_Ooal_Gow;
         pagina = 'Ainz_Ooal_Gow';
     }
+
+    if (maior == 0) {
+        pagina = 'guia_vazio';
+    }
+
+
 
     // Redirecionar para a página do personagem vencedor
     setTimeout(() => { 
