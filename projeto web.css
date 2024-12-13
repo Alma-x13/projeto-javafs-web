@@ -10,9 +10,9 @@ body{
     justify-content: center;
     
    
-        font-family: "Tinos", serif;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
       
         
    
@@ -25,13 +25,13 @@ body{
 
 #pai{
     
-font-size: 27px;
+font-size: 29px;
 
 display: flex;
 align-items: center;
 justify-content: center;
 
-color: rgb(243, 201, 161);
+
 
 }
 
@@ -46,13 +46,17 @@ font-family: "Bungee Spice", sans-serif;
 
 }
 
+.texto1{
+color: rgb(255, 255, 255);
+}
+
+
+
+
+
 #filho{
 
-
-
-
-
-
+color: rgb(243, 189, 138);
 
 border-radius: 50px;
 border:solid;

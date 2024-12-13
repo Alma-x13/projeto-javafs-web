@@ -6,6 +6,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk:MORF@24&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -40,14 +46,31 @@
           height: 15px;
           border-radius: 50%;
           background-color: #ffffff;
-          border: 2px solid #f8b660;
+          border: 2px solid rgb(237, 159, 86);
+        
         }
     
    
-        input[type="radio"]:checked + label::before {
-          background-color: #4CAF50; 
-          border-color: #4CAF50;
-        }
+    input[type="radio"]:checked + label:before {
+    background-color: #800080; 
+    border-color: #800080;
+
+}
+
+
+
+input[type="radio"]:checked + label {
+      color: #db15db;
+    }
+
+   
+label:hover::before {
+      background-color: #e84343; 
+    }
+
+
+
+
       </style>
 
 
@@ -67,17 +90,20 @@
 
 <div id="per1">
     <h2>O que voce prefere ser?</h2>
+<div class="texto1">
     <label><input type="radio" name="pergunta1" value="Ichigo">Ceifador</label><br>
     <label><input type="radio" name="pergunta1" value="Yugi">Jogador</label><br>
     <label><input type="radio" name="pergunta1" value="Naruto">Ninja</label><br>
     <label><input type="radio" name="pergunta1" value="Luffy">Pirata</label><br>
     <label><input type="radio" name="pergunta1" value="Goku">Saiyajin</label><br>
-    <label><input type="radio" name="pergunta1" value="Ash">treinador</label><br>
+    <label><input type="radio" name="pergunta1" value="Ash">Treinador</label><br>
     <label><input type="radio" name="pergunta1" value="Ainz_Ooal_Gow">Mago</label>
+</div>
 </div>
     
 <div id="per2"> 
     <h2>O que voce gostaria de poder fazer?</h2>
+<div class="texto1">
     <label><input type="radio" name="pergunta2" value="Naruto">Usar Jutsu</label><br>
     <label><input type="radio" name="pergunta2" value="Goku">Se transforma</label><br>
     <label><input type="radio" name="pergunta2" value="Luffy">Comer Frutas</label><br>
@@ -85,10 +111,12 @@
     <label><input type="radio" name="pergunta2" value="Yugi">Batalha</label><br>
     <label><input type="radio" name="pergunta2" value="Ash">Pegar Pokemon</label><br>
     <label><input type="radio" name="pergunta2" value="Ainz_Ooal_Gow">Usar Magia</label>
+</div>
 </div> 
     
 <div id="per3">
     <h2>Qual arma voce gostaria de ter?</h2>
+<div class="texto1">
     <label><input type="radio" name="pergunta3" value="Naruto">Kunai</label><br>
     <label><input type="radio" name="pergunta3" value="Yugi">Carta</label><br>
     <label><input type="radio" name="pergunta3" value="Goku">Bastão mágico</label><br>
@@ -96,11 +124,12 @@
     <label><input type="radio" name="pergunta3" value="Ainz_Ooal_Gow">Cajado</label><br>
     <label><input type="radio" name="pergunta3" value="Ichigo">Zanpakuto</label><br>
     <label><input type="radio" name="pergunta3" value="Ash">Pokebola</label>
-  
+</div>
 </div>
 
 <div id="per4">
     <h2>O que voce faria?</h2>
+<div class="texto1">
     <label><input type="radio" name="pergunta4" value="Naruto">Ser um Hokage</label><br>
     <label><input type="radio" name="pergunta4" value="Yugi">Ser Mestre Batalha de Cartas</label><br>
     <label><input type="radio" name="pergunta4" value="Ash">Ser Mestre Pokemon</label><br>
@@ -109,9 +138,11 @@
     <label><input type="radio" name="pergunta4" value="Goku">Ser Super Saiyajin</label><br>
     <label><input type="radio" name="pergunta4" value="Ainz_Ooal_Gow">Dominar o Mundo</label>
 </div>
+</div>
 
 <div id="per5">
     <h2>Qual poder voce gostaria de ter?</h2>
+<div class="texto1">
     <label><input type="radio" name="pergunta5" value="Goku">Teletransportar</label><br>
     <label><input type="radio" name="pergunta5" value="Naruto">Fazer Clone</label><br>
     <label><input type="radio" name="pergunta5" value="Luffy">Ter Corpo Elastico</label><br>
@@ -120,9 +151,11 @@
     <label><input type="radio" name="pergunta5" value="Yugi">Usar mago negro</label><br>
     <label><input type="radio" name="pergunta5" value="Ainz_Ooal_Gow">Esmagar Seu Coração</label>
 </div>
+</div>
 
 <div id="per6">
     <h2>Qual personalidade voce gostaria de ter?</h2>
+    <div class="texto1">
     <label><input type="radio" name="pergunta6" value="Naruto">Determinado</label><br>
     <label><input type="radio" name="pergunta6" value="Ainz_Ooal_Gow">Estrategista</label><br>
     <label><input type="radio" name="pergunta6" value="Goku">Animado</label><br>
@@ -130,12 +163,12 @@
     <label><input type="radio" name="pergunta6" value="Yugi">Inteligente</label><br>
     <label><input type="radio" name="pergunta6" value="Ichigo">Bravo</label><br>
     <label><input type="radio" name="pergunta6" value="Ash">Extrovertido</label>
-   
+</div>
 </div>
     
 <div id="per7">
     <h2>Qual protagonista voce gostaria de ser?</h2>
-    
+    <div class="texto1">
     <label><input type="radio" name="pergunta7" value="Goku">Goku</label><br>
     <label><input type="radio" name="pergunta7" value="Yugi">Yugi</label><br>
     <label><input type="radio" name="pergunta7" value="Ash">Ash</label><br>
@@ -144,9 +177,11 @@
     <label><input type="radio" name="pergunta7" value="Naruto">Naruto</label><br>
     <label><input type="radio" name="pergunta7" value="Ainz_Ooal_Gow">Ainz_Ooal_Gow</label>
 </div>
+</div>
     
 <div id="per8">
     <h2>O que voce gostaria de invocar?</h2>
+    <div class="texto1">
     <label><input type="radio" name="pergunta8" value="Naruto">Sapo</label><br>
     <label><input type="radio" name="pergunta8" value="Ichigo">Zangetsu</label><br>
     <label><input type="radio" name="pergunta8" value="Luffy">Kraken</label><br>
@@ -155,9 +190,11 @@
     <label><input type="radio" name="pergunta8" value="Goku">Dragão</label><br>
     <label><input type="radio" name="pergunta8" value="Ainz_Ooal_Gow">Carneiro</label>
 </div>
+</div>
 
 <div id="per9">
     <h2>Qual cor voce mais gosta?</h2>
+    <div class="texto1">
     <label><input type="radio" name="pergunta9" value="Goku">Amarelo</label><br>
     <label><input type="radio" name="pergunta9" value="Ichigo">Preto</label><br>
     <label><input type="radio" name="pergunta9" value="Luffy">Vermelho</label><br>
@@ -166,9 +203,11 @@
     <label><input type="radio" name="pergunta9" value="Naruto">Laranja</label><br>
     <label><input type="radio" name="pergunta9" value="Ainz_Ooal_Gow">Roxo</label>
 </div>
+</div>
     
 <div id="per10">
     <h2>Comida favorita?</h2>
+    <div class="texto1">
     <label><input type="radio" name="pergunta10" value="Luffy">Carne</label><br>
     <label><input type="radio" name="pergunta10" value="Naruto">Lamen</label><br>
     <label><input type="radio" name="pergunta10" value="Goku">Tudo</label><br>
@@ -176,26 +215,21 @@
     <label><input type="radio" name="pergunta10" value="Ainz_Ooal_Gow">Nao Pode Comer</label><br>
     <label><input type="radio" name="pergunta10" value="Ichigo">Chocolate </label><br>
     <label><input type="radio" name="pergunta10" value="Yugi">Nenhuma</label>
-  
+</div>
    
 </div>
    
 <div id="botao1">
-    <h1>Veja Seu Resultado</h1> 
+    <h2>Veja Seu Resultado</h2> 
     <button onclick="testar()">RESULTADO</button> 
-    <h1 id="resultado"></h1>
+    <h2 id="resultado"></h2>
 </div>
 
 </div> 
 
 </div>
 
-
-
-
 <script src="projeto web.js"> </script>
-
-
 
 </body>
 </html>
