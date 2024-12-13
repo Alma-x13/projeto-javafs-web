@@ -3,6 +3,7 @@ body{
     background-image: url(img/fundo.jpg);
     background-attachment: fixed;
     background-position: center center;
+
    
     display: flex;
     align-items: center;
@@ -18,9 +19,13 @@ body{
 }
 
 
+
+
+
+
 #pai{
     
-font-size: 21px;
+font-size: 27px;
 
 display: flex;
 align-items: center;
@@ -42,6 +47,11 @@ font-family: "Bungee Spice", sans-serif;
 }
 
 #filho{
+
+
+
+
+
 
 
 border-radius: 50px;

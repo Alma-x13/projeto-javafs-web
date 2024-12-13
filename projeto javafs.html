@@ -12,6 +12,50 @@
     <link rel="stylesheet" href="projeto web.css"> 
     <title>qual personagem de anime é</title>
 
+
+
+
+    <style>
+       
+        input[type="radio"] {
+          display: none;
+        }
+    
+     
+        label {
+          position: relative;
+          padding-left: 35px;
+          cursor: pointer;
+          font-size: 18px; 
+        }
+    
+       
+        label::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: #ffffff;
+          border: 2px solid #f8b660;
+        }
+    
+   
+        input[type="radio"]:checked + label::before {
+          background-color: #4CAF50; 
+          border-color: #4CAF50;
+        }
+      </style>
+
+
+
+
+
+
+
 </head>
 <body>
 
@@ -23,116 +67,115 @@
 
 <div id="per1">
     <h2>O que voce prefere ser?</h2>
-    <label><input type="radio" name="pergunta1" value="Ichigo">Ceifador</label>
-    <label><input type="radio" name="pergunta1" value="Yugi">Jogador</label>
-    <label><input type="radio" name="pergunta1" value="Naruto">Ninja</label>
-    <label><input type="radio" name="pergunta1" value="Luffy">Pirata</label>
-    <label><input type="radio" name="pergunta1" value="Goku">Saiyajin</label>
-    <label><input type="radio" name="pergunta1" value="Ash">treinador</label>
-    <label><input type="radio" name="pergunta1" value="Ainz_Ooal_Gow">mago</label>
+    <label><input type="radio" name="pergunta1" value="Ichigo">Ceifador</label><br>
+    <label><input type="radio" name="pergunta1" value="Yugi">Jogador</label><br>
+    <label><input type="radio" name="pergunta1" value="Naruto">Ninja</label><br>
+    <label><input type="radio" name="pergunta1" value="Luffy">Pirata</label><br>
+    <label><input type="radio" name="pergunta1" value="Goku">Saiyajin</label><br>
+    <label><input type="radio" name="pergunta1" value="Ash">treinador</label><br>
+    <label><input type="radio" name="pergunta1" value="Ainz_Ooal_Gow">Mago</label>
 </div>
     
 <div id="per2"> 
     <h2>O que voce gostaria de poder fazer?</h2>
-    <label><input type="radio" name="pergunta2" value="Naruto">Usar Jutsu</label>
-    <label><input type="radio" name="pergunta2" value="Goku">Se transforma</label>
-    <label><input type="radio" name="pergunta2" value="Luffy">Comer Frutas</label>
-    <label><input type="radio" name="pergunta2" value="Ichigo">Usar Energia Espiritual</label>
-    <label><input type="radio" name="pergunta2" value="Yugi">Batalha</label>
-    <label><input type="radio" name="pergunta2" value="Ash">Pegar Pokemon</label>
-    <label><input type="radio" name="pergunta2" value="Ainz_Ooal_Gow">usar Magia</label>
+    <label><input type="radio" name="pergunta2" value="Naruto">Usar Jutsu</label><br>
+    <label><input type="radio" name="pergunta2" value="Goku">Se transforma</label><br>
+    <label><input type="radio" name="pergunta2" value="Luffy">Comer Frutas</label><br>
+    <label><input type="radio" name="pergunta2" value="Ichigo">Usar Energia Espiritual</label><br>
+    <label><input type="radio" name="pergunta2" value="Yugi">Batalha</label><br>
+    <label><input type="radio" name="pergunta2" value="Ash">Pegar Pokemon</label><br>
+    <label><input type="radio" name="pergunta2" value="Ainz_Ooal_Gow">Usar Magia</label>
 </div> 
     
 <div id="per3">
     <h2>Qual arma voce gostaria de ter?</h2>
-    <label><input type="radio" name="pergunta3" value="Naruto">kunai</label>
-    <label><input type="radio" name="pergunta3" value="Yugi">Carta</label>
-    <label><input type="radio" name="pergunta3" value="Goku">bastão mágico</label>
-    <label><input type="radio" name="pergunta3" value="Luffy">haki</label>
-    <label><input type="radio" name="pergunta3" value="Ainz_Ooal_Gow">cajado</label>
-    <label><input type="radio" name="pergunta3" value="Ichigo">zanpakuto</label>
-    <label><input type="radio" name="pergunta3" value="Ash">pokebola</label>
+    <label><input type="radio" name="pergunta3" value="Naruto">Kunai</label><br>
+    <label><input type="radio" name="pergunta3" value="Yugi">Carta</label><br>
+    <label><input type="radio" name="pergunta3" value="Goku">Bastão mágico</label><br>
+    <label><input type="radio" name="pergunta3" value="Luffy">Haki</label><br>
+    <label><input type="radio" name="pergunta3" value="Ainz_Ooal_Gow">Cajado</label><br>
+    <label><input type="radio" name="pergunta3" value="Ichigo">Zanpakuto</label><br>
+    <label><input type="radio" name="pergunta3" value="Ash">Pokebola</label>
   
 </div>
 
 <div id="per4">
     <h2>O que voce faria?</h2>
-    <label><input type="radio" name="pergunta4" value="Naruto">ser um hokage</label>
-    <label><input type="radio" name="pergunta4" value="Yugi">ser mestre batalha de cartas</label>
-    <label><input type="radio" name="pergunta4" value="Ash">ser mestre pokemon</label>
-    <label><input type="radio" name="pergunta4" value="Luffy">ser rei dos piratas</label>
-    <label><input type="radio" name="pergunta4" value="Ichigo">tem bankai</label>
-    <label><input type="radio" name="pergunta4" value="Goku">ser super saiyajin</label>
-    <label><input type="radio" name="pergunta4" value="Ainz_Ooal_Gow">dominar o mundo</label>
+    <label><input type="radio" name="pergunta4" value="Naruto">Ser um Hokage</label><br>
+    <label><input type="radio" name="pergunta4" value="Yugi">Ser Mestre Batalha de Cartas</label><br>
+    <label><input type="radio" name="pergunta4" value="Ash">Ser Mestre Pokemon</label><br>
+    <label><input type="radio" name="pergunta4" value="Luffy">Ser Rei dos Piratas</label><br>
+    <label><input type="radio" name="pergunta4" value="Ichigo">Tem Bankai</label><br>
+    <label><input type="radio" name="pergunta4" value="Goku">Ser Super Saiyajin</label><br>
+    <label><input type="radio" name="pergunta4" value="Ainz_Ooal_Gow">Dominar o Mundo</label>
 </div>
 
 <div id="per5">
     <h2>Qual poder voce gostaria de ter?</h2>
-    <label><input type="radio" name="pergunta5" value="Goku">teletransportar</label>
-    <label><input type="radio" name="pergunta5" value="Naruto">fazer clone</label>
-    <label><input type="radio" name="pergunta5" value="Luffy">ter corpo elastico</label>
-    <label><input type="radio" name="pergunta5" value="Ash">guarda pokemon</label>
-    <label><input type="radio" name="pergunta5" value="Ichigo">poder fazer o Getsuga Tenshō</label>
-    <label><input type="radio" name="pergunta5" value="Yugi">usar mago negro</label>
-    <label><input type="radio" name="pergunta5" value="Ainz_Ooal_Gow">esmagar seu coração</label>
+    <label><input type="radio" name="pergunta5" value="Goku">Teletransportar</label><br>
+    <label><input type="radio" name="pergunta5" value="Naruto">Fazer Clone</label><br>
+    <label><input type="radio" name="pergunta5" value="Luffy">Ter Corpo Elastico</label><br>
+    <label><input type="radio" name="pergunta5" value="Ash">Guarda Pokemon</label><br>
+    <label><input type="radio" name="pergunta5" value="Ichigo">Poder Fazer o Getsuga Tenshō</label><br>
+    <label><input type="radio" name="pergunta5" value="Yugi">Usar mago negro</label><br>
+    <label><input type="radio" name="pergunta5" value="Ainz_Ooal_Gow">Esmagar Seu Coração</label>
 </div>
 
 <div id="per6">
     <h2>Qual personalidade voce gostaria de ter?</h2>
-    <label><input type="radio" name="pergunta6" value="Naruto">determinado</label>
-    <label><input type="radio" name="pergunta6" value="Ainz_Ooal_Gow">Estrategista</label>
-    <label><input type="radio" name="pergunta6" value="Goku">animado</label>
-    <label><input type="radio" name="pergunta6" value="Luffy">leal</label>
-    <label><input type="radio" name="pergunta6" value="Yugi">inteligente</label>
-    <label><input type="radio" name="pergunta6" value="Ichigo">bravo</label>
-  
-    <label><input type="radio" name="pergunta6" value="Ash">extrovertido</label>
+    <label><input type="radio" name="pergunta6" value="Naruto">Determinado</label><br>
+    <label><input type="radio" name="pergunta6" value="Ainz_Ooal_Gow">Estrategista</label><br>
+    <label><input type="radio" name="pergunta6" value="Goku">Animado</label><br>
+    <label><input type="radio" name="pergunta6" value="Luffy">Leal</label><br>
+    <label><input type="radio" name="pergunta6" value="Yugi">Inteligente</label><br>
+    <label><input type="radio" name="pergunta6" value="Ichigo">Bravo</label><br>
+    <label><input type="radio" name="pergunta6" value="Ash">Extrovertido</label>
    
 </div>
     
 <div id="per7">
     <h2>Qual protagonista voce gostaria de ser?</h2>
     
-    <label><input type="radio" name="pergunta7" value="Goku">goku</label>
-    <label><input type="radio" name="pergunta7" value="Yugi">yugi</label>
-    <label><input type="radio" name="pergunta7" value="Ash">ash</label>
-    <label><input type="radio" name="pergunta7" value="Luffy">luffy</label>
-    <label><input type="radio" name="pergunta7" value="Ichigo">ichigo</label>
-    <label><input type="radio" name="pergunta7" value="Naruto">naruto</label>
+    <label><input type="radio" name="pergunta7" value="Goku">Goku</label><br>
+    <label><input type="radio" name="pergunta7" value="Yugi">Yugi</label><br>
+    <label><input type="radio" name="pergunta7" value="Ash">Ash</label><br>
+    <label><input type="radio" name="pergunta7" value="Luffy">Luffy</label><br>
+    <label><input type="radio" name="pergunta7" value="Ichigo">Ichigo</label><br>
+    <label><input type="radio" name="pergunta7" value="Naruto">Naruto</label><br>
     <label><input type="radio" name="pergunta7" value="Ainz_Ooal_Gow">Ainz_Ooal_Gow</label>
 </div>
     
 <div id="per8">
     <h2>O que voce gostaria de invocar?</h2>
-    <label><input type="radio" name="pergunta8" value="Naruto">Sapo</label>
-    <label><input type="radio" name="pergunta8" value="Ichigo">Zangetsu</label>
-    <label><input type="radio" name="pergunta8" value="Luffy">kraken</label>
-    <label><input type="radio" name="pergunta8" value="Yugi">exodia</label>
-    <label><input type="radio" name="pergunta8" value="Ash">pikachu</label>
-    <label><input type="radio" name="pergunta8" value="Goku">dragão</label>
-    <label><input type="radio" name="pergunta8" value="Ainz_Ooal_Gow">carneiro</label>
+    <label><input type="radio" name="pergunta8" value="Naruto">Sapo</label><br>
+    <label><input type="radio" name="pergunta8" value="Ichigo">Zangetsu</label><br>
+    <label><input type="radio" name="pergunta8" value="Luffy">Kraken</label><br>
+    <label><input type="radio" name="pergunta8" value="Yugi">Exodia</label><br>
+    <label><input type="radio" name="pergunta8" value="Ash">Pikachu</label><br>
+    <label><input type="radio" name="pergunta8" value="Goku">Dragão</label><br>
+    <label><input type="radio" name="pergunta8" value="Ainz_Ooal_Gow">Carneiro</label>
 </div>
 
 <div id="per9">
     <h2>Qual cor voce mais gosta?</h2>
-    <label><input type="radio" name="pergunta9" value="Goku">amarelo</label>
-    <label><input type="radio" name="pergunta9" value="Ichigo">preto</label>
-    <label><input type="radio" name="pergunta9" value="Luffy">vermelho</label>
-    <label><input type="radio" name="pergunta9" value="Ash">branco e vermelho</label>
-    <label><input type="radio" name="pergunta9" value="Yugi">azul</label>
-    <label><input type="radio" name="pergunta9" value="Naruto">laranja</label>
+    <label><input type="radio" name="pergunta9" value="Goku">Amarelo</label><br>
+    <label><input type="radio" name="pergunta9" value="Ichigo">Preto</label><br>
+    <label><input type="radio" name="pergunta9" value="Luffy">Vermelho</label><br>
+    <label><input type="radio" name="pergunta9" value="Ash">Branco e Vermelho</label><br>
+    <label><input type="radio" name="pergunta9" value="Yugi">Azul</label><br>
+    <label><input type="radio" name="pergunta9" value="Naruto">Laranja</label><br>
     <label><input type="radio" name="pergunta9" value="Ainz_Ooal_Gow">Roxo</label>
 </div>
     
 <div id="per10">
     <h2>Comida favorita?</h2>
-    <label><input type="radio" name="pergunta10" value="Luffy">carne</label>
-    <label><input type="radio" name="pergunta10" value="Naruto">lamen</label>
-    <label><input type="radio" name="pergunta10" value="Goku">tudo</label>
-    <label><input type="radio" name="pergunta10" value="Ash">bolo</label>
-    <label><input type="radio" name="pergunta10" value="Ainz_Ooal_Gow">nao pode comer</label>
-    <label><input type="radio" name="pergunta10" value="Ichigo">chocolate </label>
-    <label><input type="radio" name="pergunta10" value="Yugi">nenhuma</label>
+    <label><input type="radio" name="pergunta10" value="Luffy">Carne</label><br>
+    <label><input type="radio" name="pergunta10" value="Naruto">Lamen</label><br>
+    <label><input type="radio" name="pergunta10" value="Goku">Tudo</label><br>
+    <label><input type="radio" name="pergunta10" value="Ash">Bolo</label><br>
+    <label><input type="radio" name="pergunta10" value="Ainz_Ooal_Gow">Nao Pode Comer</label><br>
+    <label><input type="radio" name="pergunta10" value="Ichigo">Chocolate </label><br>
+    <label><input type="radio" name="pergunta10" value="Yugi">Nenhuma</label>
   
    
 </div>
