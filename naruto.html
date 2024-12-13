@@ -15,6 +15,7 @@
 
 <div id="painaruto">
 <div>  
+    
     <h1>Parabens voce é: Naruto Usumaki</h1> 
     <h1 id="votos"></h1> 
     <img src="img/naruto-naruto-shippuden.gif" alt="" class="personagem"> 
@@ -25,17 +26,13 @@
         <button id="button1" onclick="tocarSom"()>Voltar</button>
     </a>
         
-
-
-
-
         </div>
     </div>  
 </div>
 
     <script> 
-    let contnaruto = localStorage.getItem('naruto') 
-    document.querySelector('#votos').innerHTML = 'Votos:' + contnaruto 
+    let contnaruto = localStorage.getItem('Naruto') 
+    document.querySelector('#votos').innerHTML = 'Votos:' + contnaruto * 10 + "%" 
     </script>
 
 </body>

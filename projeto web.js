@@ -47,24 +47,25 @@ function testar() {
         });
     });
 
+    
 
     let resultado = `
-        naruto = ${contnaruto}<br> 
-        goku = ${contgoku}<br> 
-        luffy = ${contluffy}<br> 
-        ichigo = ${contichigo}<br>
-        yugi = ${contyugi}<br>
-        ash = ${contash}<br>
-        Ainz Ooal Gow = ${contAinz_Ooal_Gow}
+        naruto = ${contnaruto * 10 + "%"}<br> 
+        goku = ${contgoku * 10 + "%"}<br> 
+        luffy = ${contluffy * 10 + "%"}<br> 
+        ichigo = ${contichigo * 10 + "%"}<br>
+        yugi = ${contyugi * 10 + "%"}<br>
+        ash = ${contash * 10 + "%"}<br>
+        Ainz Ooal Gow = ${contAinz_Ooal_Gow * 10 + "%"}
     `;
     document.getElementById("resultado").innerHTML = resultado;
 
-    localStorage.setItem('naruto', contnaruto);
-    localStorage.setItem('goku', contgoku);
-    localStorage.setItem('luffy', contluffy);
-    localStorage.setItem('ichigo', contichigo);
-    localStorage.setItem('yugi', contyugi);
-    localStorage.setItem('ash', contash);
+    localStorage.setItem('Naruto', contnaruto);
+    localStorage.setItem('Goku', contgoku);
+    localStorage.setItem('Luffy', contluffy);
+    localStorage.setItem('Ichigo', contichigo);
+    localStorage.setItem('Yugi', contyugi);
+    localStorage.setItem('Ash', contash);
     localStorage.setItem('Ainz_Ooal_Gow', contAinz_Ooal_Gow);
 
     // Verificando qual personagem tem mais votos
@@ -105,6 +106,8 @@ function testar() {
         window.location.href = pagina + '.html'; 
     }, 3000);
 }
+
+
 
 
 
