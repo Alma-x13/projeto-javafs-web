@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   
-    
     <title>Goku</title>
     <link rel="stylesheet" href="projeto web.css"> 
+    <style>
+       
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+     
+        .personagem {
+            width: 100%; 
+            height: auto;
+        }
+
+     
+        .audio-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px; 
+            font-size: 30px; 
+            color: white;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 5px;
+            border-radius: 50%; 
+        }
+
+        
+        .audio-icon:hover {
+            color: yellow;
+        }
+    </style>
 </head>
 <body>
     
-
-
-
-
 <div id="paigoku">
+    <div>  
+        <h1>Parabéns, você é: Son Goku</h1> 
+        <h1 id="votos"></h1> 
 
+        <div class="image-container">
+            <img src="img/goku-songoku.gif" alt="Son Goku" class="personagem"> 
+            <div class="audio-icon" id="audio-icon">🔊</div>
+        </div>
 
-<div>  
-    <h1>Parabens voce é: Son Goku</h1> 
-    <h1 id="votos"></h1> 
-    <img src="img/goku-songoku.gif" alt="" class="personagem"> 
+       
+        <audio id="audio" style="display: none;">
+            <source src="som/oi-eu-sou-goku.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
 
-
-    <div class="retorna">
-        <h2>Voce gostaria de tentar dinovo?</h2>
-    <a href="projeto javafs.html">
-        <button id="button2">Voltar</button>
-    </a>
-</div>  
-
+        <div class="retorna">
+            <h2>Você gostaria de tentar novamente?</h2>
+            <a href="projeto javafs.html">
+                <button id="button2">Voltar</button>
+            </a>
+        </div>  
+    </div>
 </div>
 
-    <script> 
+<script> 
+  
+    let contgoku = localStorage.getItem('Goku'); 
+    document.querySelector('#votos').innerHTML = 'Votos: ' + contgoku * 10 + "%";
 
+   
+    const audio = document.getElementById('audio');
+    const audioIcon = document.getElementById('audio-icon');
 
-    let contgoku = localStorage.getItem('Goku') 
-    document.querySelector('#votos').innerHTML = 'Votos:' + contgoku * 10 + "%"
-
-    </script>
-
-
-
-
+    audioIcon.addEventListener('click', () => {
+        audio.play();
+    });
+</script>
 
 </body>
-
 </html>
