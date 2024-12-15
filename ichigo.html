@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   
-    
     <title>Ichigo</title>
     <link rel="stylesheet" href="projeto web.css"> 
+    <style>
+       
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+     
+        .personagem {
+            width: 100%; 
+            height: auto;
+        }
+
+     
+        .audio-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px; 
+            font-size: 30px; 
+            color: white;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 5px;
+            border-radius: 50%; 
+        }
+
+        
+        .audio-icon:hover {
+            color: rgb(70, 70, 69);
+        }
+    </style>
 </head>
 <body>
     
 <div id="paiichigo">
+    <div>  
+        <h1>Parabéns, você é: Ichigo Kurosaki</h1> 
+        <h1 id="votos"></h1> 
 
-<div>  
-    <h1>Parabens voce é: Ichigo Kurosaki </h1> 
-    <h1 id="votos"></h1> 
-    <img src="img/ichigo.gif" alt="" class="personagem">
+        <div class="image-container">
+            <img src="img/ichigo.gif" alt="Son Goku" class="personagem"> 
+            <div class="audio-icon" id="audio-icon">🔊</div>
+        </div>
 
-    <div class="retorna">
-        <h2>Voce gostaria de tentar dinovo?</h2>
-    <a href="projeto javafs.html">
-        <button id="button4">Voltar</button>
-        
-    </a>
-</div>  
+       
+        <audio id="audio" style="display: none;">
+            <source src="som/musica de ichigo.mp3" type="audio/mpeg">
+            
+        </audio>
 
+        <div class="retorna">
+            <h2>Você gostaria de tentar novamente?</h2>
+            <a href="projeto javafs.html">
+                <button id="button2">Voltar</button>
+            </a>
+        </div>  
+    </div>
 </div>
 
-    <script> 
+<script> 
+  
+    let contichigo = localStorage.getItem('Ichigo'); 
+    document.querySelector('#votos').innerHTML = 'Votos: ' + contichigo * 10 + "%";
 
-    let contichigo = localStorage.getItem('Ichigo') 
-    document.querySelector('#votos').innerHTML = 'Votos:' + contichigo * 10 + "%"
+   
+    const audio = document.getElementById('audio');
+    const audioIcon = document.getElementById('audio-icon');
 
-    </script>
-
-
-
-
+    audioIcon.addEventListener('click', () => {
+        audio.play();
+    });
+</script>
 
 </body>
-
 </html>
