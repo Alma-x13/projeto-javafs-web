@@ -4,19 +4,16 @@
     <title>Yugi</title>
     <link rel="stylesheet" href="projeto web.css"> 
     <style>
-       
         .image-container {
             position: relative;
             display: inline-block;
         }
 
-     
         .personagem {
             width: 100%; 
             height: auto;
         }
 
-     
         .audio-icon {
             position: absolute;
             top: 10px;
@@ -30,7 +27,6 @@
             border-radius: 50%; 
         }
 
-        
         .audio-icon:hover {
             color: rgb(70, 70, 69);
         }
@@ -44,14 +40,12 @@
         <h1 id="votos"></h1> 
 
         <div class="image-container">
-            <img src="img/yugi.gif" alt="Son Goku" class="personagem"> 
+            <img src="img/yugi.gif" alt="Yugi" class="personagem"> 
             <div class="audio-icon" id="audio-icon">🔊</div>
         </div>
 
-       
         <audio id="audio" style="display: none;">
             <source src="som/musica de yugi.mp3" type="audio/mpeg">
-            
         </audio>
 
         <div class="retorna">
@@ -64,16 +58,23 @@
 </div>
 
 <script> 
-  
-    let contyugi = localStorage.getItem('Yugi'); 
+    
+    let contyugi = localStorage.getItem('Yugi') || 0; 
     document.querySelector('#votos').innerHTML = 'Votos: ' + contyugi * 10 + "%";
 
-   
+    
     const audio = document.getElementById('audio');
     const audioIcon = document.getElementById('audio-icon');
 
+   
     audioIcon.addEventListener('click', () => {
-        audio.play();
+        if (audio.paused) {
+            audio.play();
+            audioIcon.textContent = '⏸'; 
+        } else {
+            audio.pause();
+            audioIcon.textContent = '🔊'; 
+        }
     });
 </script>
 

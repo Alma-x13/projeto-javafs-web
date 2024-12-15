@@ -4,19 +4,16 @@
     <title>Naruto</title>
     <link rel="stylesheet" href="projeto web.css"> 
     <style>
-       
         .image-container {
             position: relative;
             display: inline-block;
         }
 
-     
         .personagem {
             width: 100%; 
             height: auto;
         }
 
-     
         .audio-icon {
             position: absolute;
             top: 10px;
@@ -30,7 +27,6 @@
             border-radius: 50%; 
         }
 
-        
         .audio-icon:hover {
             color: rgb(70, 70, 69);
         }
@@ -40,7 +36,7 @@
     
 <div id="painaruto">
     <div>  
-        <h1>Parabéns, você é: Naruto Usumaki</h1> 
+        <h1>Parabéns, você é: Naruto Uzumaki</h1> 
         <h1 id="votos"></h1> 
 
         <div class="image-container">
@@ -48,10 +44,8 @@
             <div class="audio-icon" id="audio-icon">🔊</div>
         </div>
 
-       
         <audio id="audio" style="display: none;">
             <source src="som/Naruto Shippuden.mp3" type="audio/mpeg">
-            
         </audio>
 
         <div class="retorna">
@@ -64,16 +58,23 @@
 </div>
 
 <script> 
-  
-    let contnaruto = localStorage.getItem('Naruto'); 
+    
+    let contnaruto = localStorage.getItem('Naruto') || 0; 
     document.querySelector('#votos').innerHTML = 'Votos: ' + contnaruto * 10 + "%";
 
-   
+    
     const audio = document.getElementById('audio');
     const audioIcon = document.getElementById('audio-icon');
 
+   
     audioIcon.addEventListener('click', () => {
-        audio.play();
+        if (audio.paused) {
+            audio.play();
+            audioIcon.textContent = '⏸'; 
+        } else {
+            audio.pause();
+            audioIcon.textContent = '🔊'; 
+        }
     });
 </script>
 
