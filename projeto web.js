@@ -116,7 +116,12 @@ function testar() {
 }
 
 
-
+function lerPerguntaAlternativas(pergunta, alternativas) {
+    const texto = `${pergunta}. As alternativas são: ${alternativas.join(', ')}.`;
+    const synth = window.speechSynthesis;  // Acessa a API SpeechSynthesis
+    const utterance = new SpeechSynthesisUtterance(texto); // Cria uma instância para a fala
+    synth.speak(utterance);  // Fala o texto
+}
 
 
     
