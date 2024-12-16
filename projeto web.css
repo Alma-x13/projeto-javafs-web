@@ -4,7 +4,7 @@ body{
     background-attachment: fixed;
     background-position: center center;
 
-   
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,9 +20,6 @@ body{
 
 
 
-
-
-
 #pai{
     
 font-size: 29px;
@@ -35,28 +32,43 @@ justify-content: center;
 
 }
 
+#paiinicio{
 
-#titulo{
-    font-size: 50px;
+    margin-top: 150px;
 
-font-family: "Bungee Spice", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    color:white;
 
+    background-image: linear-gradient( to bottom,  rgb(0, 0, 0), rgb(17, 17, 17), rgb(56, 27, 74), rgb(143, 60, 185));
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 50px;
+    border:solid;
+    border-color: rgb(0, 0, 0);
+
+    width: 700px;
+    
+    padding: 70px;
+    
+    text-align: center;
+
+    height: 420px;
 
 }
+
+
 
 .texto1{
 color: rgb(255, 255, 255);
 }
 
 
-
-
-
 #filho{
 
-color: rgb(243, 189, 138);
+color: rgb(143, 60, 185);
 
 border-radius: 50px;
 border:solid;
@@ -120,7 +132,7 @@ button{
     border-radius: 25px;
     border: solid;
     padding: 13px;
-    color: rgba(241, 142, 13, 0.898);
+    color: rgba(0, 0, 0, 0.898);
 }
 
 
@@ -375,16 +387,6 @@ height: 420px;
 
 
 
-
-
-
-
-
-
-
-
-
-
 /*retornal para pagina principal*/
 
 .retorna{
@@ -446,7 +448,15 @@ color: black;
     
 }
 
-
+#buttoninicio{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
+    margin-top: 70px;
+    color: rgb(152, 42, 236);
+    border-radius: 30px;
+    border-color: black;
+}
 
 
 
