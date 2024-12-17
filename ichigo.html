@@ -45,7 +45,7 @@
         </div>
 
         <audio id="audio" style="display: none;">
-            <source src="som/musica de ichigo.mp3" type="audio/mpeg">
+            <source src="som/musica de ichigo.mp3"  type="audio/mpeg">
         </audio>
 
         <div class="retorna">
@@ -65,8 +65,7 @@
     
     const audio = document.getElementById('audio');
     const audioIcon = document.getElementById('audio-icon');
-
-   
+    audioIcon.click();
     audioIcon.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
@@ -75,7 +74,11 @@
             audio.pause();
             audioIcon.textContent = '🔊'; 
         }
-    });
+    }
+    
+    );
+
+
 </script>
 
 </body>

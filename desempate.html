@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desempate</title>
+</head>
+<body>
+    <h1>Escolha um dos personagens para desempatar:</h1>
+
+    <form id="formDesempate">
+        <!-- As opções de desempate serão inseridas aqui -->
+    </form>
+
+    <script>
+        // Obter os personagens empatados armazenados no sessionStorage
+        let empatados = JSON.parse(sessionStorage.getItem('empatados'));
+
+        // Se não houver personagens empatados ou se houver apenas um, redireciona para a página inicial
+        if (!empatados || empatados.length <= 1) {
+            window.location.href = 'index.html';
+        }
+
+        // Criar as opções de desempate
+        let formDesempate = document.getElementById('formDesempate');
+        empatados.forEach(personagem => {
+            // Criar um input de radio para cada personagem empatado
+            let label = document.createElement('label');
+            label.innerHTML = `
+                <input type="radio" name="desempate" value="${personagem}" required> 
+                ${personagem}
+            `;
+            formDesempate.appendChild(label);
+            formDesempate.appendChild(document.createElement('br'));
+        });
+
+        // Adicionar um botão de envio ao formulário
+        let button = document.createElement('button');
+        button.type = 'submit';
+        button.innerText = 'Escolher Vencedor';
+        formDesempate.appendChild(button);
+
+        // Quando o formulário for enviado, salvar o personagem vencedor e redirecionar
+        formDesempate.addEventListener('submit', function (e) {
+            e.preventDefault();
+            let vencedor = document.querySelector('input[name="desempate"]:checked');
+            
+            if (vencedor) {
+                // Se um vencedor for escolhido, redireciona para a página do personagem
+                setTimeout(() => {
+                    window.location.href = vencedor.value + '.html';
+                }, 1000);
+            } else {
+                // Se não for escolhido nenhum vencedor, exibe uma mensagem de erro
+                alert('Por favor, escolha um personagem para desempatar!');
+            }
+        });
+    </script>
+</body>
+</html>

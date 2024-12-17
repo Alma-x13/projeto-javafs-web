@@ -14,6 +14,7 @@ function testar() {
         'pergunta6', 'pergunta7', 'pergunta8', 'pergunta9', 'pergunta10'
     ];
 
+
     perguntas.forEach(pergunta => {
         let radios = document.querySelectorAll(`input[name="${pergunta}"]:checked`);
         console.log(radios)
@@ -125,6 +126,38 @@ function lerPerguntaAlternativas(pergunta, alternativas) {
 
 
     
+
+function limpar(numeroPergunta){
+    let radios = document.querySelectorAll('input[name="pergunta'+numeroPergunta+'"]');
+    radios.forEach(function(radio) {
+    radio.checked = false;
+    });
+}
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
