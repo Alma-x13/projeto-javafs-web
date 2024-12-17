@@ -159,7 +159,7 @@ background-image: linear-gradient( to bottom,  rgb(233, 129, 17), rgb(232, 180, 
 
 width: 700px;
 
-padding: 70px;
+padding: 80px;
 
 text-align: center;
 
@@ -188,11 +188,11 @@ height: 420px;
 
     width: 700px;
     
-    padding: 70px;
+    padding: 80px;
     
     text-align: center;
 
-    height: 420px;
+    height: 440px;
     
     }
 
@@ -218,11 +218,11 @@ height: 420px;
 
     width: 700px;
     
-    padding: 70px;
+    padding: 80px;
     
     text-align: center;
 
-    height: 420px;
+    height: 440px;
     
     }
 
@@ -252,11 +252,11 @@ height: 420px;
 
     width: 700px;
     
-    padding: 70px;
+    padding: 80px;
     
     text-align: center;
 
-    height: 420px;
+    height: 450px;
     
     }
 
@@ -285,11 +285,11 @@ height: 420px;
     width: 700px;
     
 
-    padding: 80px;
+    padding: 90px;
     
     text-align: center;
 
-    height: 420px;
+    height: 440px;
     
     }
 
@@ -304,7 +304,7 @@ height: 420px;
 
     margin-top: 150px;
     
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     
     display: flex;
     align-items: center;
@@ -319,12 +319,13 @@ height: 420px;
 
     width: 700px;
     
-    padding: 70px;
+    padding: 80px;
+
     padding-bottom: 90px;
     
     text-align: center;
 
-    height: 420px;
+    height: 440px;
     
     }
 
@@ -352,11 +353,11 @@ height: 420px;
 
     width: 700px;
     
-    padding: 90px;
+    padding: 100px;
     
     text-align: center;
 
-    height: 420px;
+    height: 440px;
     
     }
 
