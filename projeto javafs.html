@@ -41,11 +41,15 @@
         
           
         }
-        
-    
 
         input[type="radio"]:checked + label {
-            color: #db15db;
+            background-color: #db15db;
+            
+        }
+
+        .perg1{
+            
+            color: #ffffff;
         }
 
    
@@ -53,15 +57,11 @@
             background-color: #8d43e8; 
     }
 
+   
 
 
 
       </style>
-
-
-
-
-
 
 
 </head>
@@ -76,13 +76,13 @@
 <div id="per1">
     <h2>O que você prefere ser?</h2>
 <div class="texto1">
-    <label><input type="radio" name="pergunta1" value="Ichigo">Ceifador</label><br>
-    <label><input type="radio" name="pergunta1" value="Yugi">Jogador</label><br>
-    <label><input type="radio" name="pergunta1" value="Naruto">Ninja</label><br>
-    <label><input type="radio" name="pergunta1" value="Luffy">Pirata</label><br>
-    <label><input type="radio" name="pergunta1" value="Goku">Saiyajin</label><br>
-    <label><input type="radio" name="pergunta1" value="Ash">Treinador</label><br>
-    <label><input type="radio" name="pergunta1" value="Ainz_Ooal_Gow">Mago</label>
+    <label class="perg1"><input type="radio" name="pergunta1" value="Ichigo">Ceifador</label><br>
+    <label class="perg1"><input type="radio" name="pergunta1" value="Yugi">Jogador</label><br>
+    <label class="perg1"><input type="radio" name="pergunta1" value="Naruto">Ninja</label><br>
+    <label class="perg1"><input type="radio" name="pergunta1" value="Luffy">Pirata</label><br>
+    <label class="perg1"><input type="radio" name="pergunta1" value="Goku">Saiyajin</label><br>
+    <label class="perg1"><input type="radio" name="pergunta1" value="Ash">Treinador</label><br>
+    <label class="perg1"><input type="radio" name="pergunta1" value="Ainz_Ooal_Gow">Mago</label>
 </div>
 <button class="leitura-button" onclick="lerPerguntaAlternativas('O que você prefere ser?', ['Ceifador', 'Jogador', 'Ninja', 'Pirata', 'Saiyajin', 'Treinador', 'Mago'])">Ler Pergunta</button>
 </div>
