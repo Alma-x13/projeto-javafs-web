@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -60,6 +62,20 @@
    
 
 
+    .leitura-button {
+            font-size: 18px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+        }
+
+        .leitura-button i {
+            margin-right: 8px;
+            margin-left: 500px;
+        }
 
       </style>
 
@@ -84,7 +100,9 @@
     <label class="perg1"><input type="radio" name="pergunta1" value="Ash">Treinador</label><br>
     <label class="perg1"><input type="radio" name="pergunta1" value="Ainz_Ooal_Gow">Mago</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('O que você prefere ser?', ['Ceifador', 'Jogador', 'Ninja', 'Pirata', 'Saiyajin', 'Treinador', 'Mago'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('O que você prefere ser?', ['Ceifador', 'Jogador', 'Ninja', 'Pirata', 'Saiyajin', 'Treinador', 'Mago'])">
+    <i class="fas fa-volume-up"></i> Ler Pergunta
+</button>
 </div>
     
 <div id="per2"> 
@@ -98,7 +116,7 @@
     <label><input type="radio" name="pergunta2" value="Ash">Pegar Pokemon</label><br>
     <label><input type="radio" name="pergunta2" value="Ainz_Ooal_Gow">Usar Magia</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('O que você gostaria de poder fazer?', ['Usar Jutsu', 'Se transforma', 'Comer Frutas', 'Usar Energia Espiritual', 'Batalha', 'Pegar Pokemon', 'Usar Magia'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('O que você gostaria de poder fazer?', ['Usar Jutsu', 'Se transforma', 'Comer Frutas', 'Usar Energia Espiritual', 'Batalha', 'Pegar Pokemon', 'Usar Magia'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
        
 </div> 
     
@@ -113,7 +131,7 @@
     <label><input type="radio" name="pergunta3" value="Ichigo">Zanpakuto</label><br>
     <label><input type="radio" name="pergunta3" value="Ash">Pokebola</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual arma você gostaria de ter?', ['Carta', 'Kunai', 'Bastão Magico', 'Haki', 'Cajado', 'Zanpakuto', 'Pokebola'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual arma você gostaria de ter?', ['Carta', 'Kunai', 'Bastão Magico', 'Haki', 'Cajado', 'Zanpakuto', 'Pokebola'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
        
 </div>
 
@@ -128,7 +146,7 @@
     <label><input type="radio" name="pergunta4" value="Goku">Ser Super Saiyajin</label><br>
     <label><input type="radio" name="pergunta4" value="Ainz_Ooal_Gow">Dominar o Mundo</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('O que você faria?', ['Ser Mestre Batalha de Cartas', 'Ser Mestre Pokemon', 'Ser um Hokage', 'Ser Rei dos Piratas', 'Tem Bankai', 'Ser Super Saiyajin', 'Dominar o Mundo'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('O que você faria?', ['Ser Mestre Batalha de Cartas', 'Ser Mestre Pokemon', 'Ser um Hokage', 'Ser Rei dos Piratas', 'Tem Bankai', 'Ser Super Saiyajin', 'Dominar o Mundo'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
 </div>
 
 <div id="per5">
@@ -142,7 +160,7 @@
     <label><input type="radio" name="pergunta5" value="Yugi">Usar mago negro</label><br>
     <label><input type="radio" name="pergunta5" value="Ainz_Ooal_Gow">Esmagar Seu Coração</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual poder você gostaria de ter?', ['Teletransportar', 'Fazer Clone', 'Ter Corpo Elastico', 'Guarda Pokemon', 'Poder Fazer o Getsuga Tenshō', 'Usar mago negro', 'Esmagar Seu Coração'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual poder você gostaria de ter?', ['Teletransportar', 'Fazer Clone', 'Ter Corpo Elastico', 'Guarda Pokemon', 'Poder Fazer o Getsuga Tenshō', 'Usar mago negro', 'Esmagar Seu Coração'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
 
 </div>
 
@@ -157,7 +175,7 @@
     <label><input type="radio" name="pergunta6" value="Ichigo">Bravo</label><br>
     <label><input type="radio" name="pergunta6" value="Ash">Extrovertido</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual personalidade você gostaria de ter?', ['Determinado', 'Estrategista', 'Animado', 'Leal', 'Inteligente', 'Bravo', 'Extrovertido'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual personalidade você gostaria de ter?', ['Determinado', 'Estrategista', 'Animado', 'Leal', 'Inteligente', 'Bravo', 'Extrovertido'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
 
 </div>
     
@@ -172,7 +190,7 @@
     <label><input type="radio" name="pergunta7" value="Naruto">Naruto</label><br>
     <label><input type="radio" name="pergunta7" value="Ainz_Ooal_Gow">Ainz_Ooal_Gow</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual protagonista você gostaria de ser?', ['Goku', 'Yugi', 'Ash', 'Luffy', 'Ichigo', 'Naruto', 'Ainz Ooal Gow'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual protagonista você gostaria de ser?', ['Goku', 'Yugi', 'Ash', 'Luffy', 'Ichigo', 'Naruto', 'Ainz Ooal Gow'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
 
 </div>
     
@@ -187,7 +205,7 @@
     <label><input type="radio" name="pergunta8" value="Goku">Dragão</label><br>
     <label><input type="radio" name="pergunta8" value="Ainz_Ooal_Gow">Carneiro</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('O que você gostaria de invocar?', ['Sapo', 'Zangetsu', 'Kraken', 'Exodia', 'Pikachu', 'Dragão', 'Carneiro'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('O que você gostaria de invocar?', ['Sapo', 'Zangetsu', 'Kraken', 'Exodia', 'Pikachu', 'Dragão', 'Carneiro'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
 
 </div>
 
@@ -202,7 +220,7 @@
     <label><input type="radio" name="pergunta9" value="Naruto">Laranja</label><br>
     <label><input type="radio" name="pergunta9" value="Ainz_Ooal_Gow">Roxo</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual cor você mais gosta?', ['Amarelo', 'Preto', 'Vermelho', 'Branco e Vermelho', 'Azul', 'Laranja', 'Roxo'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('Qual cor você mais gosta?', ['Amarelo', 'Preto', 'Vermelho', 'Branco e Vermelho', 'Azul', 'Laranja', 'Roxo'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
 
 </div>
     
@@ -217,7 +235,7 @@
     <label><input type="radio" name="pergunta10" value="Ichigo">Chocolate</label><br>
     <label><input type="radio" name="pergunta10" value="Yugi">Nenhuma</label>
 </div>
-<button class="leitura-button" onclick="lerPerguntaAlternativas('Comida favorita?', ['Carne', 'Lamen', 'Tudo', 'Bolo', 'Não Póde Comer', 'Chocolate', 'Nenhuma'])">Ler Pergunta</button>
+<button class="leitura-button" onclick="lerPerguntaAlternativas('Comida favorita?', ['Carne', 'Lamen', 'Tudo', 'Bolo', 'Não Póde Comer', 'Chocolate', 'Nenhuma'])"><i class="fas fa-volume-up"></i> Ler Pergunta</button>
 
 </div>
    
