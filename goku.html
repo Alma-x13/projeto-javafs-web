@@ -30,6 +30,8 @@
         .audio-icon:hover {
             color: rgb(70, 70, 69);
         }
+
+       
     </style>
 </head>
 <body>
@@ -42,6 +44,7 @@
         <div class="image-container">
             <img src="img/goku-songoku.gif" alt="Goku" class="personagem"> 
             <div class="audio-icon" id="audio-icon">🔊</div>
+            <div class="speak-icon" id="speak-icon">🗣️</div>
         </div>
 
         <audio id="audio" style="display: none;">
@@ -58,15 +61,14 @@
 </div>
 
 <script> 
-    
     let contgoku = localStorage.getItem('Goku') || 0; 
     document.querySelector('#votos').innerHTML = 'Votos: ' + contgoku * 10 + "%";
 
-    
     const audio = document.getElementById('audio');
     const audioIcon = document.getElementById('audio-icon');
+    const speakIcon = document.getElementById('speak-icon');
 
-   
+
     audioIcon.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
@@ -75,6 +77,15 @@
             audio.pause();
             audioIcon.textContent = '🔊'; 
         }
+    });
+
+    // ler em voz alta o personagem e a porcentagem
+    speakIcon.addEventListener('click', () => {
+        const votosTexto = `Parabéns, você é: Son Goku do Aníme Dragon Ball Super com ${contgoku * 10}% de votos.`;
+
+        const utterance = new SpeechSynthesisUtterance(votosTexto);
+        utterance.lang = 'pt-BR';  
+        speechSynthesis.speak(utterance);  
     });
 </script>
 

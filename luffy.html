@@ -30,6 +30,8 @@
         .audio-icon:hover {
             color: rgb(70, 70, 69);
         }
+
+      
     </style>
 </head>
 <body>
@@ -42,6 +44,7 @@
         <div class="image-container">
             <img src="img/luffy-monkey-d-luffy.gif" alt="Luffy" class="personagem"> 
             <div class="audio-icon" id="audio-icon">🔊</div>
+            <div class="speak-icon" id="speak-icon">🗣️</div>
         </div>
 
         <audio id="audio" style="display: none;">
@@ -65,6 +68,7 @@
     
     const audio = document.getElementById('audio');
     const audioIcon = document.getElementById('audio-icon');
+    const speakIcon = document.getElementById('speak-icon');
 
    
     audioIcon.addEventListener('click', () => {
@@ -75,6 +79,16 @@
             audio.pause();
             audioIcon.textContent = '🔊'; 
         }
+    });
+
+
+    // ler em voz alta o personagem e a porcentagem
+    speakIcon.addEventListener('click', () => {
+        const votosTexto = `Parabéns, você é: Monkey De. Luffy do Aníme One Piece com ${contluffy * 10}% de votos.`;
+
+        const utterance = new SpeechSynthesisUtterance(votosTexto);
+        utterance.lang = 'pt-BR';  
+        speechSynthesis.speak(utterance); 
     });
 </script>
 

@@ -117,6 +117,7 @@ function testar() {
 }
 
 
+//codigo para ler a pergunta e alternativa//
 function lerPerguntaAlternativas(pergunta, alternativas) {
     const texto = `${pergunta}. As alternativas são: ${alternativas.join(', ')}.`;
     const synth = window.speechSynthesis; 
@@ -125,7 +126,6 @@ function lerPerguntaAlternativas(pergunta, alternativas) {
 }
 
 
-    
 
 function limpar(numeroPergunta){
     let radios = document.querySelectorAll('input[name="pergunta'+numeroPergunta+'"]');

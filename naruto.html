@@ -30,6 +30,19 @@
         .audio-icon:hover {
             color: rgb(70, 70, 69);
         }
+
+        .speak-icon {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 5px;
+            border-radius: 50%; 
+        }
     </style>
 </head>
 <body>
@@ -42,6 +55,8 @@
         <div class="image-container">
             <img src="img/naruto-naruto-shippuden.gif" alt="Naruto" class="personagem"> 
             <div class="audio-icon" id="audio-icon">🔊</div>
+          
+            <div class="speak-icon" id="speak-icon">🗣️</div>
         </div>
 
         <audio id="audio" style="display: none;">
@@ -51,7 +66,7 @@
         <div class="retorna">
             <h2>Você gostaria de tentar novamente?</h2>
             <a href="projeto javafs.html">
-                <button id="button2">Voltar</button>
+                <button id="button2" aria-label="Voltar para a página inicial">Voltar</button>
             </a>
         </div>  
     </div>
@@ -62,11 +77,11 @@
     let contnaruto = localStorage.getItem('Naruto') || 0; 
     document.querySelector('#votos').innerHTML = 'Votos: ' + contnaruto * 10 + "%";
 
-    
     const audio = document.getElementById('audio');
     const audioIcon = document.getElementById('audio-icon');
+    const speakIcon = document.getElementById('speak-icon');
 
-   
+    // Controle de áudio
     audioIcon.addEventListener('click', () => {
         if (audio.paused) {
             audio.play();
@@ -76,6 +91,17 @@
             audioIcon.textContent = '🔊'; 
         }
     });
+
+    //ler em voz alta o personagem e a porcentagem
+    speakIcon.addEventListener('click', () => {
+        const votosTexto = `Parabéns, você é: Naruto Uzumakido 
+        Aníme Naruto Shippudencom ${contnaruto * 10}% de votos.`;
+
+        const utterance = new SpeechSynthesisUtterance(votosTexto);
+        utterance.lang = 'pt-BR';  // Define o idioma para português
+        speechSynthesis.speak(utterance);  // Faz a leitura em voz alta
+    });
+
 </script>
 
 </body>
